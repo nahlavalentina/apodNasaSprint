@@ -1,4 +1,4 @@
-// const requisicao = new XMLHttpRequest();
+// const requisicao = new XMLHttpRequest(); 
 const url = "https://api.nasa.gov/planetary/apod?date="
 const apiKey = "&api_key=f5EySbgzwGEYPyNUCE5AM0MKzNo0CZHAOwhhsgBd"
 const dateInput = $("#user-date");
@@ -10,8 +10,14 @@ $("#submit-btn").click(function (event) {
     success: function (resposta) {
       $("#result-date").text(resposta.date);
       $("#title").text(resposta.title);
-      $("#result-img").attr("src", `${resposta.hdurl}`);
       $("#explanation").text(resposta.explanation);
+      const imagem = $("#result-img")
+
+      if(resposta.media_type == 'image') {
+        imagem.html(`<img class="imagem" src="${resposta.url}">`);
+      } else {
+        imagem.html(`<iframe class="imagem" src="${resposta.url}?autoplay=1&mute=1"></iframe>`); 
+      }
     },
   });
 });
