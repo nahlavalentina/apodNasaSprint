@@ -11,7 +11,7 @@ $("#submit-btn").click(function (event) {
       $("#result-date").text(resposta.date);
       $("#title").text(resposta.title);
       $("#explanation").text(resposta.explanation);
-      const imagem = $("#result-img")
+      const imagem = $("#result-img");
 
       if(resposta.media_type == 'image') {
         imagem.html(`<img class="imagem" src="${resposta.url}">`);

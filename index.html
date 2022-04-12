@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="img/nasa-icon.png" type="image/x-icon">
     <title>NASA Pictures of the Day</title>
 </head>
+
 <body id="root">
+    <header class="header">
+        <h1>NASA: Astronomy Picture of the Day</h1>
+    </header>
     <main>
         <form>
-            <input type="date" name="date" id="user-date" placeholder="yyyy, mm, dd">
+            <input type="date" name="date" id="user-date">
             <input type="button" value="Enviar" id="submit-btn">
         </form>
+        <span class="results">
+            <div id="result-img"></div>
+            <p id="result-date"></p>
+            <p id="title" class="picTitle"></p>
+            <p id="explanation"></p>
+        </span>
     </main>
-    <span>
-        <p id="result-img"></p>
-        <p id="result-date"></p>
-        <p id="title"></p>
-        <p id="explanation"></p>
-    </span>
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/recebeApod.js"></script>
 </body>
+
 </html>
