@@ -1,6 +1,10 @@
 html, body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -11,19 +15,89 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 70px;
+    padding: 10px;
+}
+
+.present {
+    width: 40%;
+    padding: 60px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#user-date {
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: var(--corner);
+    color: var(--title);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+article {
+    padding: 20px;
+}
+
+form {
+    padding: 20px;
 }
 
 .results {
     color: var(--text);
+    width: 40%;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .imagem {
     width: 490px;
     height: 283px;
+    margin-bottom: 25px;
 }
 
 .picTitle {
     font-weight: bold;
     color: var(--title);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#result-date {
+    margin: 10px 0;
+}
+
+#title {
+    margin: 10px 0;
+}
+
+#explanation {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--corner);
+    padding: 15px;
+    text-align: center;
+    color: var(--first);
 }

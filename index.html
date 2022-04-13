@@ -19,10 +19,16 @@
         <h1>NASA: Astronomy Picture of the Day</h1>
     </header>
     <main>
-        <form>
-            <input type="date" name="date" id="user-date">
-            <input type="button" value="Enviar" id="submit-btn">
-        </form>
+        <div class="present">
+            <article>
+                <p>Discover the cosmos! Each day, a different image or photograph of our fascinating space is featured,
+                    along with a brief explanation by a professional astronomer. Find any date you want below.</p>
+            </article>
+            <form>
+                <input type="date" name="date" id="user-date">
+                <input type="button" value="Enviar" id="submit-btn">
+            </form>
+        </div>
         <span class="results">
             <div id="result-img"></div>
             <p id="result-date"></p>
@@ -30,6 +36,9 @@
             <p id="explanation"></p>
         </span>
     </main>
+    <footer>
+        <h5>Nahla Valentina - Códigos do Amanhã - Resilia - Abril/2022 - Para fins didáticos.</h5>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/recebeApod.js"></script>
