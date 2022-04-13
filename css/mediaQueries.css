@@ -1,0 +1,39 @@
+@media (max-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .present {
+        width: 80%;
+    }
+
+    .results {
+        width: 80%;
+    }
+}
+
+@media (max-width: 426px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .present {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .imagem {
+        width: 390px;
+        height: 203px;
+    }
+
+    .results {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
